@@ -1,0 +1,31 @@
+<h2>つぶやき一覧</h2>
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<div class="row">
+  <div class="col-md-offset-4 col-md-4">
+    <div class="row">
+      <% @tweets.each do |tweet| %>
+        <div class="panel panel-default">
+          <div class="tweet-content panel-body"><%= tweet.content %></div>
+          <div class="panel-footer clearfix">
+            <div class="tweet-time"><%= tweet.updated_at.in_time_zone('Tokyo') %></div>
+            <div class=" btn-content">
+              <span class="btn btn-info">
+                <%= link_to "編集",
+                            edit_tweet_path(tweet.id),
+                            data: {confirm: "本当に編集していいですか？"} %>
+              </span>
+              <span class="btn btn-danger">
+                <%= link_to "削除",
+                            tweet_path(tweet.id),
+                            method: :delete,
+                            data: {confirm: "本当に削除してもいいですか？"} %>
+              </span>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
