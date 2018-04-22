@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :tweets, :except => :show do
+  get '/', to: 'tweets#root'
+  resources :tweets, except: :show do
     collection do
       post :confirm
     end
