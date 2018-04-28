@@ -66,8 +66,31 @@ body > .container {
 }
 
 .top-img {
-  height: 1000px;
+  // position: relative;
+  display: table;
+  padding-top: 60px;
+  height: 500px;
+  width: 100%;
   background-image: url("KAZTP1050224_TP_V.jpg");
+  text-align: center;
+}
+
+.top-text {
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // position: absolute;
+  // margin: auto;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 10rem;
+  -webkit-text-stroke: 1px white;
+}
+
+.app-info {
+  margin-top: 10px;
+  text-align: center;
 }
 
 // bootstrap上書き
