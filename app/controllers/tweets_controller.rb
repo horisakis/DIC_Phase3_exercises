@@ -15,7 +15,7 @@ class TweetsController < ApplicationController
   def create
     @tweet = Tweet.new(tweet_params)
     if @tweet.save
-      redirect_to list_tweets_path, notice: '投稿しました'
+      redirect_to tweets_path, notice: '投稿しました'
     else
       render 'new'
     end
@@ -29,7 +29,7 @@ class TweetsController < ApplicationController
 
   def update
     if @tweet.update(tweet_params)
-      redirect_to list_tweets_path, notice: '編集しました'
+      redirect_to tweets_path, notice: '編集しました'
     else
       render 'edit'
     end
@@ -37,7 +37,7 @@ class TweetsController < ApplicationController
 
   def destroy
     @tweet.destroy
-    redirect_to list_tweets_path, notice: '削除しました'
+    redirect_to tweets_path, notice: '削除しました'
   end
 
   private
