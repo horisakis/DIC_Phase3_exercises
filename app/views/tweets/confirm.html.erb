@@ -1,19 +1,21 @@
-<h3>以下の内容で送信する</h3>
-<div class="row">
-  <div class="col-md-offset-4 col-md-4">
-    <div class="panel panel-default">
-    <p class="panel-body"><%=  @tweet.content %></p>
-      <div class="btn-confirm">
-        <%= form_with(model: @tweet, url: tweets_path, local: true, class: "form_commit") do |form| %>
-            <%= form.hidden_field :content %>
+<div class="container">
+  <h2>以下の内容で送信する</h2>
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+      <div class="panel panel-default">
+      <p class="panel-body"><%=  @tweet.content %></p>
+        <div class="btn-confirm">
+          <%= form_with(model: @tweet, url: tweets_path, local: true, class: "form_commit") do |form| %>
+              <%= form.hidden_field :content %>
 
-            <%= form.submit "登録する", :class => "btn btn-primary" %>
-        <% end %>
+              <%= form.submit "登録する", :class => "btn btn-primary" %>
+          <% end %>
 
-        <%= form_with(model: @tweet, url: new_tweet_path, local: true, method: "get", class: "form_back") do |form| %>
-            <%= form.hidden_field :content %>
-            <%= form.submit "戻る", name: "back", :class=> "btn btn-default" %>
-        <% end %>
+          <%= form_with(model: @tweet, url: new_tweet_path, local: true, method: "get", class: "form_back") do |form| %>
+              <%= form.hidden_field :content %>
+              <%= form.submit "戻る", name: "back", :class=> "btn btn-default" %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
