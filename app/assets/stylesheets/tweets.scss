@@ -44,8 +44,19 @@ body > .container {
   display: block;
 }
 
+.row-eq-height{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tweet-footer{
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
 .tweet-time {
   float: left;
+  // overflow-wrap : break-word;
 }
 
 .btn-content {
