@@ -1,5 +1,6 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: %i[edit update destroy]
+  before_action :logged_in?, only: %i[new edit show destroy]
 
   def root; end
 
@@ -48,5 +49,9 @@ class TweetsController < ApplicationController
 
   def set_tweet
     @tweet = Tweet.find(params[:id])
+  end
+
+  def logged_in?
+    redirect_to new_session_path if current_user.nil?
   end
 end
