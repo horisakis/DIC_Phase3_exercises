@@ -14,7 +14,7 @@
             <div class="tweet-footer panel-footer clearfix">
               <div class="tweet-time"><%= favorite_tweet.updated_at.in_time_zone('Tokyo') %></div>
               <div class=" btn-content">
-                  <%= link_to 'お気に入り解除する', favorite_path(id: "", tweet_id: favorite_tweet.id), method: :delete, class: 'btn btn-danger' %>
+                  <%= link_to 'お気に入り解除する', favorite_path(id: " ", tweet_id: favorite_tweet.id), method: :delete, class: 'btn btn-danger' %>
               </div>
             </div>
           </div>
