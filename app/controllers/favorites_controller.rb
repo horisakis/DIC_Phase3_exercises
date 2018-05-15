@@ -1,6 +1,6 @@
 class FavoritesController < ApplicationController
+  before_action :redirect_to_log_in, only: :index
   def index
-    redirect_to_logg_in
     @favorite_tweets = current_user.favorite_tweets
   end
 
