@@ -53,14 +53,8 @@ body > .container {
   flex-wrap: wrap;
 }
 
-.tweet-footer{
-  // display: flex;
-  // flex-wrap: wrap;
-}
-
-.tweet-time {
+.tweet-info {
   float: left;
-  // overflow-wrap : break-word;
 }
 
 .btn-content {
@@ -81,7 +75,6 @@ body > .container {
 }
 
 .top-img {
-  // position: relative;
   display: table;
   padding-top: 60px;
   height: 500px;
@@ -91,12 +84,6 @@ body > .container {
 }
 
 .top-text {
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
-  // position: absolute;
-  // margin: auto;
   display: table-cell;
   vertical-align: middle;
   font-size: 10rem;

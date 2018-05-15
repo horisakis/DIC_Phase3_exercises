@@ -7,4 +7,8 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 6 }
   before_save { email.downcase! }
   has_secure_password
+
+  has_many :tweets
+  has_many :favorites, dependent: :destroy
+  has_many :favorite_tweets, through: :favorites, source: :tweet
 end

@@ -1,20 +1,24 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: %i[edit update destroy]
-  before_action :logged_in?, only: %i[new edit show destroy]
+  before_action :redirect_to_logg_in, only: %i[new edit show destroy]
 
   def root; end
 
   def confirm
     @tweet = Tweet.new(tweet_params)
+    @tweet.user_id = current_user.id
     render 'new' if @tweet.invalid?
   end
 
   def index
     @tweets = Tweet.all
+    @favorites = logged_in? ? current_user.favorites : nil
   end
 
   def create
     @tweet = Tweet.new(tweet_params)
+    @tweet.user_id = current_user.id
+
     if @tweet.save
       redirect_to tweets_path, notice: '投稿しました'
     else
@@ -49,9 +53,5 @@ class TweetsController < ApplicationController
 
   def set_tweet
     @tweet = Tweet.find(params[:id])
-  end
-
-  def logged_in?
-    redirect_to new_session_path if current_user.nil?
   end
 end

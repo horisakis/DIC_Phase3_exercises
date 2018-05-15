@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>お気に入り一覧</h2>
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <div class="">
+    <div class="">
+      <div class="row row-eq-height">
+        <% @favorite_tweets.each do |favorite_tweet| %>
+        <div class="col-md-5 col-md-offset-1 col-xs-12">
+
+          <div class="panel panel-default">
+            <div class="tweet-content panel-body"><%= favorite_tweet.content %></div>
+            <div class="tweet-footer panel-footer clearfix">
+              <div class="tweet-time"><%= favorite_tweet.updated_at.in_time_zone('Tokyo') %></div>
+              <div class=" btn-content">
+                  <%= link_to 'お気に入り解除する', favorite_path(id: "", tweet_id: favorite_tweet.id), method: :delete, class: 'btn btn-danger' %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

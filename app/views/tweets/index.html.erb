@@ -12,8 +12,21 @@
           <div class="panel panel-default">
             <div class="tweet-content panel-body"><%= tweet.content %></div>
             <div class="tweet-footer panel-footer clearfix">
-              <div class="tweet-time"><%= tweet.updated_at.in_time_zone('Tokyo') %></div>
+              <div class="tweet-info">
+                <div class="user-name"><%= tweet.user.name %></div>
+                <div class="tweet-time"><%= tweet.updated_at.in_time_zone('Tokyo') %></div>
+              </div>
+              <% if logged_in? %>
               <div class=" btn-content">
+                <% unless tweet.user_id == current_user.id %>
+                  <% if @favorites.find_by(tweet_id: tweet.id).present? %>
+                    <%= link_to 'お気に入り解除する', favorite_path(id: " ", tweet_id: tweet.id), method: :delete, class: 'btn btn-danger' %>
+                  <% else %>
+                    <%= link_to 'お気に入りする', favorites_path(tweet_id: tweet.id), method: :post, class: 'btn btn-primary' %>
+                  <% end %>
+                <% end %>
+
+                <% if tweet.user_id == current_user.id %>
                 <span class="btn btn-info">
                   <%= link_to "編集",
                               edit_tweet_path(tweet.id),
@@ -25,7 +38,9 @@
                               method: :delete,
                               data: {confirm: "本当に削除してもいいですか？"} %>
                 </span>
+                <% end %>
               </div>
+              <% end %>
             </div>
           </div>
         </div>
