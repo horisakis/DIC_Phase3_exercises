@@ -7,7 +7,7 @@ module SessionsHelper
     !current_user.nil?
   end
 
-  def redirect_to_logg_in
+  def redirect_to_log_in
     redirect_to new_session_path if current_user.nil?
   end
 end

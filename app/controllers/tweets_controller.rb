@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: %i[edit update destroy]
-  before_action :redirect_to_logg_in, only: %i[new edit show destroy]
+  before_action :redirect_to_log_in, only: %i[new edit show destroy]
 
   def root; end
 
