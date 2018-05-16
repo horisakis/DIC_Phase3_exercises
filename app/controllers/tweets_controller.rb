@@ -20,6 +20,7 @@ class TweetsController < ApplicationController
     @tweet.user_id = current_user.id
 
     if @tweet.save
+      InfoMailer.info_mail(@tweet).deliver
       redirect_to tweets_path, notice: '投稿しました'
     else
       render 'new'
