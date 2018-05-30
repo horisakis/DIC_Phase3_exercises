@@ -1,15 +1,15 @@
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.6.5/ext/websocket-driver
-/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180411-85898-1v1objy.rb extconf.rb
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180529-35690-1rnj6ic.rb extconf.rb
 creating Makefile
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.6.5/ext/websocket-driver
 make "DESTDIR=" clean
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.6.5/ext/websocket-driver
 make "DESTDIR="
 compiling websocket_mask.c
 linking shared-object websocket_mask.bundle
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.6.5/ext/websocket-driver
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20180411-85898-1q59ck2
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20180529-35690-1mjrs1f

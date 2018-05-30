@@ -1,5 +1,5 @@
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/pg-0.21.0/ext
-/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180411-97690-1g8tb30.rb extconf.rb
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/pg-0.21.0/ext
+/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180529-35690-10bs6ey.rb extconf.rb
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
 checking for libpq-fe.h... yes
@@ -45,12 +45,12 @@ creating Makefile
 
 To see why this extension failed to compile, please check the mkmf.log which can be found here:
 
-  /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/extensions/x86_64-darwin-17/2.4.0-static/pg-0.21.0/mkmf.log
+  /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/extensions/x86_64-darwin-17/2.4.0-static/pg-0.21.0/mkmf.log
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/pg-0.21.0/ext
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/pg-0.21.0/ext
 make "DESTDIR=" clean
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/pg-0.21.0/ext
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/pg-0.21.0/ext
 make "DESTDIR="
 compiling gvl_wrappers.c
 compiling pg.c
@@ -73,6 +73,6 @@ compiling pg_type_map_in_ruby.c
 compiling util.c
 linking shared-object pg_ext.bundle
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/pg-0.21.0/ext
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/pg-0.21.0/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20180411-97690-lk19yj
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20180529-35690-49iknt

@@ -1,11 +1,11 @@
-current directory: /Users/user/dive/exercises_login_r/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
-/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180509-74870-fvtu7b.rb extconf.rb
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
+/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180529-35690-otyedy.rb extconf.rb
 creating Makefile
 
-current directory: /Users/user/dive/exercises_login_r/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
 make "DESTDIR=" clean
 
-current directory: /Users/user/dive/exercises_login_r/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
 make "DESTDIR="
 compiling bcrypt_ext.c
 compiling crypt.c
@@ -14,6 +14,6 @@ compiling crypt_gensalt.c
 compiling wrapper.c
 linking shared-object bcrypt_ext.bundle
 
-current directory: /Users/user/dive/exercises_login_r/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20180509-74870-1f6zsc8
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20180529-35690-1dxm723

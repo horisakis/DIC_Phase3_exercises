@@ -1,5 +1,5 @@
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/puma-3.11.3/ext/puma_http11
-/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180411-97690-1qx2xpb.rb extconf.rb
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/puma-3.11.3/ext/puma_http11
+/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180529-35690-90mm6w.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
@@ -7,12 +7,12 @@ creating Makefile
 
 To see why this extension failed to compile, please check the mkmf.log which can be found here:
 
-  /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/extensions/x86_64-darwin-17/2.4.0-static/puma-3.11.3/mkmf.log
+  /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/extensions/x86_64-darwin-17/2.4.0-static/puma-3.11.3/mkmf.log
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/puma-3.11.3/ext/puma_http11
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/puma-3.11.3/ext/puma_http11
 make "DESTDIR=" clean
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/puma-3.11.3/ext/puma_http11
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/puma-3.11.3/ext/puma_http11
 make "DESTDIR="
 compiling http11_parser.c
 compiling io_buffer.c
@@ -20,6 +20,6 @@ compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/puma-3.11.3/ext/puma_http11
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/puma-3.11.3/ext/puma_http11
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20180411-97690-mopobi/puma
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20180529-35690-gs0wmt/puma

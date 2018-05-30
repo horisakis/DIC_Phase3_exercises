@@ -1,5 +1,5 @@
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri
-/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180411-85898-18we54v.rb extconf.rb
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri
+/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180529-35690-1k0ezfk.rb extconf.rb
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using packaged libraries.
@@ -33,7 +33,7 @@ Extracting libxml2-2.9.7.tar.gz into tmp/x86_64-apple-darwin17.4.0/ports/libxml2
 Running 'configure' for libxml2 2.9.7... OK
 Running 'compile' for libxml2 2.9.7... OK
 Running 'install' for libxml2 2.9.7... OK
-Activating libxml2 2.9.7 (from /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.4.0/libxml2/2.9.7)...
+Activating libxml2 2.9.7 (from /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.4.0/libxml2/2.9.7)...
 ************************************************************************
 IMPORTANT NOTICE:
 
@@ -57,7 +57,7 @@ Extracting libxslt-1.1.32.tar.gz into tmp/x86_64-apple-darwin17.4.0/ports/libxsl
 Running 'configure' for libxslt 1.1.32... OK
 Running 'compile' for libxslt 1.1.32... OK
 Running 'install' for libxslt 1.1.32... OK
-Activating libxslt 1.1.32 (from /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.4.0/libxslt/1.1.32)...
+Activating libxslt 1.1.32 (from /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.4.0/libxslt/1.1.32)...
 checking for -llzma... yes
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
@@ -73,12 +73,12 @@ creating Makefile
 
 To see why this extension failed to compile, please check the mkmf.log which can be found here:
 
-  /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/extensions/x86_64-darwin-17/2.4.0-static/nokogiri-1.8.2/mkmf.log
+  /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/extensions/x86_64-darwin-17/2.4.0-static/nokogiri-1.8.2/mkmf.log
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri
 make "DESTDIR=" clean
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri
 make "DESTDIR="
 compiling html_document.c
 compiling html_element_description.c
@@ -174,9 +174,9 @@ rb_data_object_get(VALUE obj)
 2 warnings generated.
 linking shared-object nokogiri/nokogiri.bundle
 Cleaning files only used during build.
-rm -rf /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-apple-darwin17.4.0/ports
-rm -rf /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ports
+rm -rf /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-apple-darwin17.4.0/ports
+rm -rf /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ports
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.2/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20180411-85898-q2kmeb/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20180529-35690-q52fp2/nokogiri

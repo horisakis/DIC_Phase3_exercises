@@ -1,11 +1,11 @@
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
-/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180411-97690-15rz57k.rb extconf.rb
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+/Users/user/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180529-35690-v8tkis.rb extconf.rb
 creating Makefile
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
 make "DESTDIR=" clean
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
 make "DESTDIR="
 compiling breakpoint.c
 compiling byebug.c
@@ -14,6 +14,6 @@ compiling locker.c
 compiling threads.c
 linking shared-object byebug/byebug.bundle
 
-current directory: /Users/user/dive/Phase2problem/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
+current directory: /Users/user/dive/exercises_uploader/vendor/bundle/ruby/2.4.0/gems/byebug-10.0.2/ext/byebug
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180411-97690-1n7yqrt/byebug
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180529-35690-fetyi1/byebug

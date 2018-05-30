@@ -1,5 +1,5 @@
 {
-  "name": "Phase2problem",
+  "name": "exercises_uploader",
   "private": true,
   "dependencies": {
     "bootstrap": "3",

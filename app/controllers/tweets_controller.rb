@@ -18,6 +18,7 @@ class TweetsController < ApplicationController
   def create
     @tweet = Tweet.new(tweet_params)
     @tweet.user_id = current_user.id
+    @tweet.image.retrieve_from_cache! params[:cache][:image]
 
     if @tweet.save
       InfoMailer.info_mail(@tweet).deliver
@@ -28,7 +29,13 @@ class TweetsController < ApplicationController
   end
 
   def new
-    @tweet = params[:back] ? Tweet.new(tweet_params) : Tweet.new
+    if params[:back]
+      @tweet = Tweet.new(tweet_params)
+      @tweet.image.retrieve_from_cache! params[:cache][:image]
+
+    else
+      @tweet = Tweet.new
+    end
   end
 
   def edit; end
@@ -49,7 +56,7 @@ class TweetsController < ApplicationController
   private
 
   def tweet_params
-    params.require(:tweet).permit(:content)
+    params.require(:tweet).permit(:content, :image, :image_cache)
   end
 
   def set_tweet
