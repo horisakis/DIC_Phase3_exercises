@@ -11,8 +11,12 @@
 
           <div class="panel panel-default">
             <div class="tweet-content panel-body">
-              <%= tweet.content %>
-              <%= image_tag(tweet.image, class: :upload_image) %>
+              <div class="tweet-content">
+                <%= tweet.content %>
+              </div>
+              <div class="tweet-image">
+                <%= image_tag(tweet.image, class: :upload_image) %>
+              </div>
             </div>
             <div class="tweet-footer panel-footer clearfix">
               <div class="tweet-info">
