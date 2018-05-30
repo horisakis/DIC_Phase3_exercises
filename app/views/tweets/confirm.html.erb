@@ -14,7 +14,7 @@
         <div class="btn-confirm">
           <%= form_with(model: @tweet, url: tweets_path, local: true, class: "form_commit") do |form| %>
               <%= form.hidden_field :content %>
-              <%= hidden_field_tag :"cache[image]",@tweet.image.cache_name %>
+              <%= form.hidden_field :image_cache, value: @tweet.image.cache_name %>
               <!-- <%= form.hidden_field :"cache[image]", :vaule => @tweet.image.cache_name %> -->
 
               <%= form.submit "登録する", :class => "btn btn-primary" %>
@@ -22,7 +22,7 @@
 
           <%= form_with(model: @tweet, url: new_tweet_path, local: true, method: "get", class: "form_back") do |form| %>
               <%= form.hidden_field :content %>
-              <%= hidden_field_tag :"cache[image]",@tweet.image.cache_name %>
+              <%= form.hidden_field :image_cache, value: @tweet.image.cache_name %>
               <!-- <%= form.hidden_field :"cache[image]", :value => @tweet.image.cache_name %> -->
               <%= form.submit "戻る", name: "back", :class=> "btn btn-default" %>
           <% end %>
