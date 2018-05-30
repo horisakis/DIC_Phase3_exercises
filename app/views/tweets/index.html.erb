@@ -16,7 +16,8 @@
             </div>
             <div class="tweet-footer panel-footer clearfix">
               <div class="tweet-info">
-                <div class="user-name"><%= tweet.user.name %></div>
+                <span class="user-icon"> <%= get_icon tweet.user %> </span>
+                <span class="user-name"><%= tweet.user.name %></span>
                 <div class="tweet-time"><%= tweet.updated_at.in_time_zone('Tokyo') %></div>
               </div>
               <% if logged_in? %>

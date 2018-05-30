@@ -89,7 +89,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { host: 'mysterious-shelf-mailer.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'pacific-forest-75501-uploader.herokuapp.com' }
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
     # ここに環境変数をuser_name,passwordとして使用することが記されている

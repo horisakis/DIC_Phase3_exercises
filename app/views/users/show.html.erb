@@ -1,6 +1,17 @@
 <div class="container">
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
 
 <h1><%= @user.name %>のページ</h1>
 
 <p>メールアドレス: <%= @user.email %></p>
+
+<div class="user-icon">
+  <%= get_icon @user %>
+  <span class="btn btn-info">
+    <%= link_to "アイコン変更", edit_user_path(@user.id) %>
+  </span>
+</div>
+
 </div>

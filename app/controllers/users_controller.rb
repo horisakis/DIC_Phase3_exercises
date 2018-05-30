@@ -17,10 +17,32 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if params[:user]
+      if @user.update_attribute(:icon, params[:user][:icon])
+        redirect_to user_path, notice: 'アイコンを変更しました'
+      else
+        render 'edit'
+      end
+    else
+      @user.remove_icon!
+      if @user.update_attribute(:icon, @user.icon)
+        redirect_to user_path, notice: 'アイコンを変更しました'
+      else
+        render 'edit'
+      end
+    end
+  end
+
   private
 
   def user_params
     params.require(:user).permit(:name, :email, :password,
-                                 :password_confirmation)
+                                 :password_confirmation, :icon)
   end
 end
